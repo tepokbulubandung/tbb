@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TEPOK BULU BANDUNG</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="dist/img/icon.png" type="image/x-icon" />
+    <!-- Bootstrap CSS Framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Animate.css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- SweetAlert2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.2/dist/sweetalert2.min.css"
+      rel="stylesheet" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Modal section -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-4 mb-0 mt-0 text-center w-100"
+              id="staticBackdropLabel">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="35px"
+                fill="#011627">
+                <path
+                  d="M448.67-280h66.66v-240h-66.66v240Zm31.32-316q15.01 0 25.18-9.97 10.16-9.96 10.16-24.7 0-15.3-10.15-25.65-10.16-10.35-25.17-10.35-15.01 0-25.18 10.35-10.16 10.35-10.16 25.65 0 14.74 10.15 24.7 10.16 9.97 25.17 9.97Zm.19 516q-82.83 0-155.67-31.5-72.84-31.5-127.18-85.83Q143-251.67 111.5-324.56T80-480.33q0-82.88 31.5-155.78Q143-709 197.33-763q54.34-54 127.23-85.5T480.33-880q82.88 0 155.78 31.5Q709-817 763-763t85.5 127Q880-563 880-480.18q0 82.83-31.5 155.67Q817-251.67 763-197.46q-54 54.21-127 85.84Q563-80 480.18-80Zm.15-66.67q139 0 236-97.33t97-236.33q0-139-96.87-236-96.88-97-236.46-97-138.67 0-236 96.87-97.33 96.88-97.33 236.46 0 138.67 97.33 236 97.33 97.33 236.33 97.33ZM480-480Z" />
+              </svg>
+              Informasi
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center fs-auto">
+            Daftar mabar sekarang! Dan<br />gunakan kode voucher
+            <strong style="color: #e71d36">ZZ0N8UI</strong> <br />untuk
+            mendapatkan diskon khusus! <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal section end-->
+
+    <div id="main-content">
+      <!-- Title + logo section -->
+      <div class="fixed-top" style="background-color: #011627">
+        <div
+          class="container-fluid text-center py-2 animate__animated animate__fadeInDown">
+          <a class="judul fs-2 text-decoration-none d-none d-md-inline">
+            <img
+              src="dist/img/logo1.png"
+              alt="Logo"
+              width="45"
+              height="45"
+              class="d-inline-block" />
+            TEPOK BULU BANDUNG
+            <img
+              src="dist/img/logo1.png"
+              alt="Logo"
+              width="45"
+              height="45"
+              class="d-inline-block" />
+          </a>
+          <a class="judul fs-auto text-decoration-none d-inline d-md-none">
+            <img
+              src="dist/img/logo1.png"
+              alt="Logo"
+              width="45"
+              height="45"
+              class="d-inline-block" />
+            TEPOK BULU BANDUNG
+            <img
+              src="dist/img/logo1.png"
+              alt="Logo"
+              width="45"
+              height="45"
+              class="d-inline-block" />
+          </a>
+        </div>
+      </div>
+      <!-- Title + logo section end -->
+
+      <!-- Hero section -->
+
+      <div
+        lc-helper="background"
+        class="container-fluid py-5 mt-5 d-flex justify-content-center animate__animated animate__fadeInDown animate__delay 2s animate__slow 1s"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1625480859582-03ea1d0e88fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1124&amp;q=100');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        ">
+        <div
+          class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12 animate__animated animate__fadeInDown animate__slow 2s"
+          style="
+            backdrop-filter: blur(6px) saturate(102%);
+            -webkit-backdrop-filter: blur(6px) saturate(102%);
+            background-color: rgba(255, 255, 255, 0.45);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+          ">
+          <div class="lc-block">
+            <div editable="rich">
+              <h2 class="fw-bolder display-3">Tepok Bulu Bandung</h2>
+            </div>
+          </div>
+          <div class="lc-block col-md-8">
+            <div editable="rich">
+              <p class="lead">
+                Komunitas mabar bulu tangkis yang terbuka untuk semua kalangan,
+                mulai dari pemula hingga profesional
+              </p>
+            </div>
+          </div>
+          <div class="lc-block">
+            <a
+              class="btn btn-dark"
+              href="https://chat.whatsapp.com/JEaXZwfJ262Cu4lEdFLh9N"
+              role="button"
+              >Gabung Komunitas</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Hero section end -->
+
+      <!-- Divider section -->
+      <div class="animate__animated animate__fadeIn animate__delay-2s">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          fill="#011627">
+          <path d="M0 0v100-79.4a1892 1892 0 0 1 500 0l500 66.7V0H0Z"></path>
+        </svg>
+      </div>
+      <!-- Divider section end -->
+
+      <!-- Dokumentasi section -->
+      <div class="container lg-w-75 position-relative">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="d-flex justify-content-between align-items-center">
+          <h1 class="fs-4">Dokumentasi Mabar</h1>
+        </div>
+        <section class="section">
+          <div class="row">
+            <div class="col-12">
+              <div class="row gallery">
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 active shadow-lg rounded"
+                      src="dist/img/1.jpg"
+                      alt="Thumbnail" />
+                  </a>
+                </div>
+
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/2.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="1" />
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/3.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="2" />
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/4.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="3" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="row mt-2 mt-md-4 gallery">
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 active shadow-lg rounded"
+                      src="dist/img/5.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="0" />
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/6.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="1" />
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/7.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="2" />
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1700">
+                  <a>
+                    <img
+                      class="w-100 shadow-lg rounded"
+                      src="dist/img/8.jpg"
+                      data-bs-target="#Gallerycarousel"
+                      data-bs-slide-to="3" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Dokumentasi section end -->
+
+      <!-- Divider section -->
+      <hr data-aos="zoom-in" data-aos-duration="1500" class="custom-hr mt-4" />
+      <!-- Divider section end -->
+
+      <!-- FaQ section -->
+      <div class="container lg-w-75 position-relative">
+        <!-- Tombol Expand All & Collapse All + FAQ Title -->
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="fs-4" data-aos="zoom-in" data-aos-duration="1300">
+            Frequently Asked Questions
+          </h1>
+          <h6
+            id="toggleAll"
+            class="me-3"
+            data-aos="zoom-in"
+            data-aos-duration="1300"
+            style="cursor: pointer; color: #2ec4b6">
+            Expand All
+          </h6>
+        </div>
+        <div class="accordion accordion-flush" id="accordionExample">
+          <!-- FaQ ke-1 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                style="background-color: #d9edf7">
+                Kenapa harus bergabung mabar badminton bersama Tepok Bulu
+                Bandung?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Karena kami merupakan komunitas mabar bulu tangkis yang terbuka
+                untuk semua kalangan, mulai dari pemula hingga profesional
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-2 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style="background-color: #f2dede">
+                Bagaimana cara bergabung mabar badminton bersama Tepok Bulu
+                Bandung?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Untuk bergabung dalam mabar badminton bersama kami, Anda perlu
+                melakukan pendaftaran melalui link s.id/DaftarMabarTBB yang akan
+                dibuka setiap H-3
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-3 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="background-color: #d9edf7">
+                Keuntungan bergabung bersama Tepok Bulu Bandung?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Berikut adalah beberapa keuntungan jika Anda bergabung bersama
+                kami: Dokumentasi (dikirim maksimal h+1) Memiliki jadwal bermain
+                yang teratur Loyalty card* Gratis grip raket* Mabar gratis*
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-4 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+                style="background-color: #f2dede">
+                Berapa biaya pendaftaran mabar?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Biaya pendaftaran senesar Rp30.000 per minggu (1x Pertemuan)
+                atau Rp105.000 per bulan (4x Pertemuan), dan sudah termasuk:
+                Dokumentasi Sewa lapangan Shuttlecock Bermain 3-4 match
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-5 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+                style="background-color: #d9edf7">
+                Apakah pemula bisa mengikuti mabar?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Tentu bisa, pemula dapat bergabung mabar bersama kami. Namun,
+                perlu diketahui bahwa ini hanya fun mabar tanpa adanya pelatih
+                atau sesi latihan
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-6 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+                style="background-color: #f2dede">
+                Jenis shuttlecock yang dipakai?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Jenis shuttlecock yang kami gunakan pada mabar adalah
+                shuttlecock berjenis spin
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-7 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+                style="background-color: #d9edf7">
+                Metode pembayaran yang tersedia?
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Tersedia berbagai metode pembayaran untuk memudahkan Anda: QRIS,
+                Bank Transfer (VA), OVO, DANA, LinkAja, Jenius, Alfamart, dan
+                Indomaret
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-8 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+                style="background-color: #f2dede">
+                Jika sudah mendaftar apakah bisa melakukan cancel?
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Jika tidak dapat hadir dapat dipindahkan ke minggu berikutnya
+                atau dianggap hangus jika tidak ada konfirmasi, untuk informasi
+                lebih lengkap mengenai syarat dan ketentuan mabar TBB silakan
+                kunjungi link s.id/SnKMabarTBB
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-9 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+                style="background-color: #d9edf7">
+                Jadwal mabar?
+              </button>
+            </h2>
+            <div
+              id="collapseNine"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Untuk mengetahui jadwal mabar, silakan cek highlight Instagram
+                kami yang berjudul “Jadwal mabar”
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-10 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+                style="background-color: #f2dede">
+                Lokasi mabar?
+              </button>
+            </h2>
+            <div
+              id="collapseTen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Untuk mengetahui lokasi mabar, silakan cek highlight Instagram
+                kami yang berjudul “Lokasi mabar”
+              </div>
+            </div>
+          </div>
+          <!-- FaQ ke-11 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            class="accordion-item rounded-4 shadow-lg bg-white">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEleven"
+                aria-expanded="false"
+                aria-controls="collapseEleven"
+                style="background-color: #d9edf7">
+                Grup WhatsApp?
+              </button>
+            </h2>
+            <div
+              id="collapseEleven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Untuk bergabung ke grup whatsapp, silakan cek highlight
+                Instagram kami yang berjudul “Grup WA”
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FaQ section end -->
+
+      <!-- Divider section -->
+      <hr data-aos="zoom-in" data-aos-duration="1500" class="custom-hr mt-4" />
+      <!-- Divider section end -->
+
+      <!-- Lokasi mabar section -->
+      <div class="container lg-w-95 position-relative">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="d-flex justify-content-between align-items-center">
+          <h1 class="fs-4">Lokasi Mabar</h1>
+        </div>
+        <iframe
+          data-aos="zoom-in"
+          data-aos-duration="1700"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.851021573418!2d107.66998651047771!3d-6.908411193062168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd5efb9a76a1%3A0x1c74e9fda5f155f6!2sBadminton%20Court%20of%20Arcamanik!5e0!3m2!1sen!2sid!4v1728726512503!5m2!1sen!2sid&t=k"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Lokasi mabar section end -->
+
+      <br />
+
+      <div class="container d-flex justify-content-center align-items-center">
+        <p class="m-0 small text-secondary">
+          Made with
+          <i class="fa-solid fa-heart fa-beat-fade" style="color: #ffc0cb"></i>
+          by
+          <a
+            href="https://instagram.com/tepokbulubandung"
+            target="_blank"
+            class="text-secondary text-decoration-none">
+            Tepok Bulu Bandung
+          </a>
+        </p>
+      </div>
+
+      <br /><br /><br /><br />
+      <!-- Trakteer overlay section -->
+      <div
+        class="div mb-5 animate__animated animate__zoomIn animate__delay-2s"
+        style="
+          position: fixed;
+          bottom: 10px;
+          right: 20px;
+          z-index: 9999;
+          margin-bottom: 5px;
+        ">
+        <script
+          type="text/javascript"
+          src="https://cdn.trakteer.id/js/embed/trbtn.min.js?date=18-11-2023"></script>
+        <script type="text/javascript">
+          (function () {
+            var trbtnId = trbtn.init(
+              "Trakteer",
+              "#be1e2d",
+              "https://trakteer.id/tepokbulubandung",
+              "https://cdn.trakteer.id/images/embed/trbtn-icon.png?date=18-11-2023",
+              "30"
+            );
+            trbtn.draw(trbtnId);
+          })();
+        </script>
+      </div>
+      <!-- Trakteer overlay section end -->
+
+      <!-- Navbar section -->
+      <div
+        class="fixed-bottom rounded-pill mx-3 mb-1"
+        style="background-color: #011627">
+        <div class="container-fluid text-center py-1">
+          <div class="icon-container">
+            <!-- Ikon pertama (MENU): Dropdown -->
+            <div class="icon dropdown">
+              <a
+                class="text-decoration-none"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 -960 960 960"
+                  width="35px"
+                  fill="#fdfffc">
+                  <path
+                    d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li>
+                  <a
+                    class="dropdown-item mt-0 mb-0"
+                    href="daftar-mabar-rabu.html"
+                    >Daftar Mabar Rabu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item mt-0 mb-0"
+                    href="daftar-mabar-minggu.html"
+                    >Daftar Mabar Minggu</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider mt-0 mb-0" /></li>
+                <li>
+                  <a class="dropdown-item mt-0 mb-0" href="https://s.id/GrupTBB"
+                    >Grup WhatsApp</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider mt-0 mb-0" /></li>
+                <li>
+                  <a class="dropdown-item mt-0 mb-0" href="kritik-&-saran.html"
+                    >Kritik & Saran</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider mt-0 mb-0" /></li>
+                <li>
+                  <a
+                    class="dropdown-item mt-0 mb-0"
+                    href="https://tepokbulubandung.myr.id"
+                    >Merchandise</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider mt-0 mb-0" /></li>
+                <li>
+                  <a class="dropdown-item mt-0 mb-0" href="support-us.html"
+                    >Support US</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider mt-0 mb-0" /></li>
+                <li>
+                  <a
+                    class="dropdown-item mt-0 mb-0"
+                    href="waiting-list-mabar.html"
+                    >Waiting List Mabar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Ikon kedua (HOME): Arahkan ke index -->
+            <div class="icon text-center">
+              <a href="index.html" class="text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 -960 960 960"
+                  width="35px"
+                  fill="#ff9f1c">
+                  <path
+                    d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z" />
+                </svg>
+              </a>
+            </div>
+            <!-- Ikon ketiga (CONTACT): Arahkan ke contact -->
+            <div class="icon">
+              <a href="contact.html" class="text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 -960 960 960"
+                  width="35px"
+                  fill="#fdfffc">
+                  <path
+                    d="m503.33-80-10-113.33h-30q-142.66 0-243-100.34Q120-394 120-536.67q0-142.66 100.67-243Q321.33-880 464.67-880q71 0 131.83 25.83 60.83 25.84 106.33 72 45.5 46.17 71.34 108.34Q800-611.67 800-538.67q0 69-21.17 136-21.16 67-60 126.67-38.83 59.67-93.66 109.67-54.84 50-121.84 86.33Zm60-120.67q78.34-66 124.17-155.16 45.83-89.17 45.83-182.84 0-119-76.83-196.83-76.83-77.83-191.83-77.83-116.34 0-197.17 80.83-80.83 80.83-80.83 195.83 0 115 80.83 195.84Q348.33-260 463.33-260h100v59.33Zm-99-108.33q16.34 0 27.67-11.33 11.33-11.34 11.33-27.67 0-16.33-11.33-27.67Q480.67-387 464.33-387q-16.33 0-27.66 11.33-11.34 11.34-11.34 27.67 0 16.33 11.34 27.67Q448-309 464.33-309Zm-27.66-133H490q0-26.67 7.67-41.67 7.66-15 36.33-43.66 24-24 35.33-46 11.34-22 11.34-47.34 0-47-31.84-74.83-31.83-27.83-81.5-27.83-42.66 0-74.66 22.83T346-640.67l49.33 20q9-23 26.67-36.83 17.67-13.83 43.33-13.83 29 0 44.84 14.66Q526-642 526-620q0 18.33-10.67 35.83-10.66 17.5-34 41.5-29.66 28.67-37.16 45.84-7.5 17.16-7.5 54.83ZM460-507Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar section end -->
+    </div>
+
+    <!-- Script tombol collapsed atau expanded FaQ -->
+    <script>
+      // Inisialisasi variabel untuk melacak status (apakah collapsed atau expanded)
+      let isCollapsed = true;
+
+      document
+        .getElementById("toggleAll")
+        .addEventListener("click", function () {
+          var accordions = document.querySelectorAll(".accordion-collapse");
+
+          if (isCollapsed) {
+            // Expand semua item
+            accordions.forEach(function (accordion) {
+              var collapseInstance = bootstrap.Collapse.getInstance(accordion);
+              if (!collapseInstance) {
+                collapseInstance = new bootstrap.Collapse(accordion, {
+                  toggle: false,
+                });
+              }
+              collapseInstance.show();
+            });
+            // Ubah teks menjadi "Collapse All"
+            document.getElementById("toggleAll").innerText = "Collapse All";
+          } else {
+            // Collapse semua item
+            accordions.forEach(function (accordion) {
+              var collapseInstance = bootstrap.Collapse.getInstance(accordion);
+              if (!collapseInstance) {
+                collapseInstance = new bootstrap.Collapse(accordion, {
+                  toggle: false,
+                });
+              }
+              collapseInstance.hide();
+            });
+            // Ubah teks menjadi "Expand All"
+            document.getElementById("toggleAll").innerText = "Expand All";
+          }
+
+          // Ganti status
+          isCollapsed = !isCollapsed;
+        });
+    </script>
+    <!-- Script tombol collapsed atau expanded FaQ end -->
+
+    <!-- Script menampilkan modal -->
+    <script>
+      // Fungsi untuk menghitung waktu kapan modal terakhir kali ditampilkan
+      function shouldShowModal() {
+        const lastShownTime = localStorage.getItem("lastModalShownTime");
+        if (lastShownTime) {
+          const currentTime = new Date().getTime();
+          const thirtyMinutes = 5 * 60 * 1000; // 30 menit dalam milidetik
+          if (currentTime - lastShownTime > thirtyMinutes) {
+            return true;
+          }
+          return false;
+        }
+        return true; // Jika ini pertama kali membuka halaman
+      }
+
+      // Menyimpan waktu modal terakhir kali ditampilkan
+      function setModalShownTime() {
+        const currentTime = new Date().getTime();
+        localStorage.setItem("lastModalShownTime", currentTime);
+      }
+
+      // Menampilkan modal jika memenuhi syarat (hanya sekali setiap 30 menit)
+      window.onload = function () {
+        if (shouldShowModal()) {
+          var myModal = new bootstrap.Modal(
+            document.getElementById("staticBackdrop")
+          );
+          myModal.show();
+          setModalShownTime(); // Simpan waktu modal ditampilkan
+        }
+      };
+    </script>
+    <!-- Script menampilkan modal end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
